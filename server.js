@@ -44,7 +44,9 @@ Promise.resolve()
          xmlString = xmlReturn;
          _.forEach(endpointArray, function(endpoint){
              log.info("THis endpoint "+endpoint);
-             tpXml.setBranding(endpoint,xmlString)
+             if(!endpoint) return log.info("Blank endpoint");
+             tpXml.setBranding(endpoint,xmlString);
+             log.info("Deployed package to :"+endpoint)
          })
     })
     .catch(err => {

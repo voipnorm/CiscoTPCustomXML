@@ -3,10 +3,10 @@
 const buildXml = require('./tools/buildXml');
 const excel = require('./tools/excel');
 const image64 = require('./tools/image64');
-const tpXml= require('./tools/tpXML');
 const filewatcher = require('./tools/filewatcher');
 const _ = require('lodash');
 const log = require('./svrConfig/logger');
+const Endpoint =  require('./tools/endpoint');
 
 var brandingPath = './img/brand/';
 var wallPaperPath = './img/wallpaper/';
@@ -17,9 +17,9 @@ STEP 3. Build XML payload and deliver payload to each endpoint
  */
 
 var filePath = [];
-
+var deployEndpoints = [];
 var endpointArray = [];
-var xmlString;
+
 
 Promise.resolve()
     .then(() => {
@@ -41,13 +41,11 @@ Promise.resolve()
     })
     .then((xmlReturn) => {
         log.info("XML deployment starting........ ");
-         xmlString = xmlReturn;
-         _.forEach(endpointArray, function(endpoint){
-             if(!endpoint) return log.info("Blank endpoint, no files deployed.");
-             tpXml.setBranding(endpoint,xmlString, function(err,responseText){
-                 if(err){return log.error("failed to deliver package either not supported or not online endpoint : "+endpoint)}
-                 log.info("Deployed package to :"+endpoint)
-             });
+         _.forEach(endpointArray, function(ip){
+             if(!ip) return log.info("Blank endpoint, no files deployed.");
+             deployEndpoints.push(new Endpoint(ip, xmlReturn));
+
+
 
          })
     })

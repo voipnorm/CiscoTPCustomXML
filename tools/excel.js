@@ -18,7 +18,7 @@ module.exports = {
                 log.info(file);
                 filename = fileDir+file;
 
-            log.info("reading CSV")
+            log.info("Reading CSV, creating endpoint array for deployment...")
 
             workbook.csv.readFile(filename)
                 .then(function(worksheet) {

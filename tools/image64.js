@@ -6,7 +6,7 @@ const _ = require('lodash');
 
 module.exports = {
   base64encode: function(files){
-      return new Promise(function(resolve, reject){
+      return new Promise(function(resolve){
           var base64Array =[];
           _.forEach(files, function(file){
               var bitmap = fs.readFileSync(file);

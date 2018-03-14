@@ -26,7 +26,7 @@ Promise.resolve()
         return filewatcher.fileWatcher();
     })
     .then((files) => {
-        log.info("next step encoding ");
+        log.info("Encoding images to base64 for deployment.... ");
         return image64.base64encode(files);
     })
     .then((fileString) => {
@@ -35,21 +35,23 @@ Promise.resolve()
         return excel.readcsv()
     })
     .then((endpoints) => {
-        log.info("processing branding xml");
+        log.info("Processing branding xml to create new xml file......");
         endpointArray = endpoints;
         return buildXml.brandingXml(filePath);
     })
     .then((xmlReturn) => {
-        log.info("XML output = ");
+        log.info("XML deployment starting........ ");
          xmlString = xmlReturn;
          _.forEach(endpointArray, function(endpoint){
-             log.info("THis endpoint "+endpoint);
-             if(!endpoint) return log.info("Blank endpoint");
-             tpXml.setBranding(endpoint,xmlString);
-             log.info("Deployed package to :"+endpoint)
+             if(!endpoint) return log.info("Blank endpoint, no files deployed.");
+             tpXml.setBranding(endpoint,xmlString, function(err,responseText){
+                 if(err){return log.error("failed to deliver package either not supported or not online endpoint : "+endpoint)}
+                 log.info("Deployed package to :"+endpoint)
+             });
+
          })
     })
     .catch(err => {
-        log.error("Oh dear"+err);
+        log.error(err);
     })
 

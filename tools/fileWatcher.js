@@ -15,7 +15,7 @@ module.exports = {
                 dirString.push(filename);
 
                 if(dir.length===i+1){
-                    log.info("Finished reading directoies");
+                    log.info("Finished reading directories, moving to next step...");
                     return resolve(dirString);
                 }
             }

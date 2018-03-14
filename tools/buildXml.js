@@ -1,7 +1,7 @@
 
 module.exports = {
     brandingXml: function(base64){
-        return new Promise(function(resolve, reject){
+        return new Promise(function(resolve){
             var base64Brand = base64[0];
             var base64wp = base64[1];
             var xml2 = `<Command>

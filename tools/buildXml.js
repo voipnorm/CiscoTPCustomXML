@@ -27,6 +27,32 @@ module.exports = {
 
         })
 
+    },
+    inRoomXml: function(){
+        return new Promise(function(resolve) {
+
+        })
+    },
+    macroXml: function(){
+        return new Promise(function(resolve){
+
+        })
+
+    },
+    bundleXml: function(checksum, url){
+        return new Promise(function(resolve){
+            var xml2 = `<Command>
+					<Provisioning>
+						<Service>
+							<Fetch>
+								<URL>${url}</URL>
+								<Checksum>${checksum}</Checksum>	
+							</Fetch>
+						</Service>
+					</Provisioning>
+				</Command>`;
+            resolve(xml2)
+        })
     }
 }
 

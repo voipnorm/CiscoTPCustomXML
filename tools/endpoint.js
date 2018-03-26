@@ -22,10 +22,10 @@ util.inherits(Endpoint,EventEmitter);
 
 Endpoint.prototype.init = function(){
     var self = this;
-    self.setBranding();
+    self.deployXml();
 };
 
-Endpoint.prototype.setBranding =  function(){
+Endpoint.prototype.deployXml =  function(){
     var self = this;
     var mimeType = "text/xml";
 
@@ -48,5 +48,6 @@ Endpoint.prototype.setBranding =  function(){
     xmlHttp.withCredentials = true;
     xmlHttp.send(this.xml);
 };
+
 
 module.exports = Endpoint;

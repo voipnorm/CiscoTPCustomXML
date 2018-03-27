@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f270c219-8cd0-4e13-852e-aa83ae502eb8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xmlFiles/backupBundle/backup-bundle.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/svrConfig/httpServer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/ipaddress.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xmlFiles/macros/proximityMacro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xmlFiles/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xmlFiles/roomControls/proximityButton.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/buildXml.js" afterPath="$PROJECT_DIR$/tools/buildXml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/endpoint.js" afterPath="$PROJECT_DIR$/tools/endpoint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/fileWatcher.js" afterPath="$PROJECT_DIR$/tools/fileWatcher.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xmlFiles/readme.txt" afterPath="$PROJECT_DIR$/xmlFiles/readme.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,8 +34,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="132">
-                <caret line="40" column="66" lean-forward="false" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+              <first_editor relative-caret-position="224">
+                <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -130,8 +121,8 @@
       <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xmlFiles/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+            <state relative-caret-position="45">
+              <caret line="3" column="101" lean-forward="false" selection-start-line="3" selection-start-column="101" selection-end-line="3" selection-end-column="101" />
               <folding />
             </state>
           </provider>
@@ -191,13 +182,13 @@
         <option value="$PROJECT_DIR$/endpoints/endpoints.csv" />
         <option value="$PROJECT_DIR$/xmlFiles/macros/proximityMacro.js" />
         <option value="$PROJECT_DIR$/tools/buildXml.js" />
-        <option value="$PROJECT_DIR$/xmlFiles/readme.txt" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/tools/ipaddress.js" />
         <option value="$PROJECT_DIR$/tools/fileWatcher.js" />
         <option value="$PROJECT_DIR$/tools/endpoint.js" />
         <option value="$PROJECT_DIR$/svrConfig/httpServer.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/xmlFiles/readme.txt" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -543,7 +534,7 @@
       <workItem from="1518050339054" duration="391000" />
       <workItem from="1519242409494" duration="7482000" />
       <workItem from="1519672771536" duration="6824000" />
-      <workItem from="1520004282897" duration="52252000" />
+      <workItem from="1520004282897" duration="53436000" />
     </task>
     <task id="LOCAL-00001" summary="Change directory">
       <created>1520978863692</created>
@@ -601,11 +592,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521060143254</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update to Endpoint Constructor">
+      <created>1522096094040</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1522096094040</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105066000" />
+    <option name="totallyTimeSpent" value="106250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1515" y="223" width="1666" height="816" extended-state="0" />
@@ -993,14 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmlFiles/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1080,11 +1070,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/xmlFiles/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="101" lean-forward="false" selection-start-line="3" selection-start-column="101" selection-end-line="3" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="132">
-            <caret line="40" column="66" lean-forward="false" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+          <first_editor relative-caret-position="224">
+            <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

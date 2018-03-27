@@ -32,6 +32,8 @@ Configuration required:
 ```bash
 mkdir myproj
 cd myproj
+git clone https://github.com/voipnorm/CiscoTPCustomXML.git
+npm install
 
 ```
 

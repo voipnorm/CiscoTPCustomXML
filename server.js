@@ -8,6 +8,7 @@ const _ = require('lodash');
 const log = require('./svrConfig/logger');
 const Endpoint =  require('./tools/endpoint');
 const ip = require('./tools/ipaddress');
+const collect = require('./tools/collectLogs');
 
 var brandingPath = './img/brand/';
 var wallPaperPath = './img/wallpaper/';
@@ -94,7 +95,16 @@ if(process.argv[2] === "bundle"){
         })
 
 
-}else{
+}else if(process.argv[2] === "logs"){
+    const ip = process.argv[3];
+    collect.collectLogs(ip)
+        .then((response) => {
+            log.info(response);
+        })
+        .catch((err) => {
+        log.error(err);
+        })
+} else{
     log.info("Please specify after the 'node server.js' command a deployment type. Either bundle or branding. Example node server.js branding")
 }
 

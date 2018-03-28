@@ -1,111 +1,24 @@
-//Application Entry
+//Application Entry. Command line inut processed by switch command and launches the right function called.
 
-const buildXml = require('./tools/buildXml');
-const excel = require('./tools/excel');
-const image64 = require('./tools/image64');
-const filewatcher = require('./tools/filewatcher');
-const _ = require('lodash');
 const log = require('./svrConfig/logger');
-const Endpoint =  require('./tools/endpoint');
-const ip = require('./tools/ipaddress');
-const collect = require('./tools/collectLogs');
-
-var brandingPath = './img/brand/';
-var wallPaperPath = './img/wallpaper/';
-
-
-var port = process.env.PORT || "9000";
-var filePath = [];
-var deployEndpoints = [];
-var endpointArray = [];
-var backUpObj ={};
-
-if(process.argv[2] === "bundle"){
-    /*STEP 1. build http of host URL and create checksum of backup zip file
-     STEP 2. Convert CSV of endpoints into array
-     STEP 3. Build XML payload and deliver payload to each endpoint
-     */
-    //URL consists of directory structure and IP address of machine deployed
-    log.info("Work in progress");
-    ip.getIPAddress()
-        .then(ipString => {
-            backUpObj.ip = ipString;
-            return filewatcher.fileWatcherBackupBundle()
-        })
-        .then(fileObj => {
-            backUpObj.cs = fileObj.checksum;
-            backUpObj.dir = fileObj.fileDir;
-            return excel.readcsv()
-        })
-        .then((endpoints) => {
-            log.info("Processing branding xml to create new xml file......");
-            endpointArray = endpoints;
-            var url = `http://${backUpObj.ip}:${port}/${backUpObj.dir}`;
-            log.info(url)
-            return buildXml.bundleXml(backUpObj.cs,url)
-        })
-        .then((xmlReturn) => {
-            log.info("XML deployment starting........ ");
-            _.forEach(endpointArray, function(ip){
-                if(!ip) return log.info("Blank endpoint, no files deployed.");
-                deployEndpoints.push(new Endpoint(ip, xmlReturn));
-            })
-        })
-        .catch(err => {
-            log.error(err)
-        });
-    const httpServer = require('./svrConfig/httpServer');
-
-}else if(process.argv[2] === "branding"){
-    /*STEP 1. build base 64 string of image and create file location strings strings
-     STEP 2. Convert CSV of endpoints into array
-     STEP 3. Build XML payload and deliver payload to each endpoint
-     */
-    log.info("Branding to be deployed.");
-    Promise.resolve()
-        .then(() => {
-            return filewatcher.fileWatcher();
-        })
-        .then((files) => {
-            log.info("Encoding images to base64 for deployment.... ");
-            return image64.base64encode(files);
-        })
-        .then((fileString) => {
-            //log.info(fileString[1]);
-            filePath = fileString;
-            return excel.readcsv()
-        })
-        .then((endpoints) => {
-            log.info("Processing branding xml to create new xml file......");
-            endpointArray = endpoints;
-            return buildXml(filePath);
-        })
-        .then((xmlReturn) => {
-            log.info("XML deployment starting........ ");
-            _.forEach(endpointArray, function(ip){
-                if(!ip) return log.info("Blank endpoint, no files deployed.");
-                deployEndpoints.push(new Endpoint(ip, xmlReturn));
+const comms = require('./svrConfig/comFunct');
 
 
 
-            })
-        })
-        .catch(err => {
-            log.error(err);
-        })
-
-
-}else if(process.argv[2] === "logs"){
-    const ip = process.argv[3];
-    collect.collectLogs(ip)
-        .then((response) => {
-            log.info(response);
-        })
-        .catch((err) => {
-        log.error(err);
-        })
-} else{
-    log.info("Please specify after the 'node server.js' command a deployment type. Either bundle or branding. Example node server.js branding")
+switch (process.argv[2]) {
+    case null:
+        log.info("Command incomplete");
+        return log.info("Please specify your operation. Node command incomplete. Refer to readme for more instructions.");
+    case "bundle":
+        log.info("Deploying bundle");
+        return comms.bundle();
+    case 'branding':
+        log.info("Deploy Branding");
+        return comms.branding();
+    case 'logs':
+        log.info("Deploy log collection.");
+        return comms.logCollection(process.argv[3]);
+    default:
+        log.info("Command incomplete");
+        return log.info("Please specify your operation. Node command incomplete. Refer to readme for more instructions.");
 }
-
-

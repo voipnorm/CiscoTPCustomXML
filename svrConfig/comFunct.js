@@ -53,7 +53,7 @@ module.exports = {
             .catch(err => {
                 log.error(err)
             });
-        const httpServer = require('./svrConfig/httpServer');
+        const httpServer = require('./httpServer');
 
     },
     branding: function(){
@@ -78,7 +78,7 @@ module.exports = {
             .then((endpoints) => {
                 log.info("Processing branding xml to create new xml file......");
                 endpointArray = endpoints;
-                return buildXml(filePath);
+                return buildXml.brandingXml(filePath);
             })
             .then((xmlReturn) => {
                 log.info("XML deployment starting........ ");

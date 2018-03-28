@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f270c219-8cd0-4e13-852e-aa83ae502eb8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/svrConfig/comFunct.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svrConfig/comFunct.js" afterPath="$PROJECT_DIR$/svrConfig/comFunct.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +19,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="49">
@@ -33,9 +32,34 @@
       <file leaf-file-name="comFunct.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/svrConfig/comFunct.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="80" column="44" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buildXml.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tools/buildXml.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+              <folding>
+                <marker date="1521745779000" expanded="true" signature="212:667" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="233:652" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="250:630" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="281:374" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="405:489" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="520:612" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="1021:1209" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="1041:1194" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="1057:1173" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="1072:1087" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="1072:1118" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="1072:1156" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="1072:1163" ph="..." />
+                <marker date="1521745779000" expanded="true" signature="1141:1151" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,16 +137,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmlFiles/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="101" lean-forward="false" selection-start-line="3" selection-start-column="101" selection-end-line="3" selection-end-column="101" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -176,8 +190,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tools/collectLogs.js" />
         <option value="$PROJECT_DIR$/endpointLogs/readme.txt" />
-        <option value="$PROJECT_DIR$/svrConfig/comFunct.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/svrConfig/comFunct.js" />
       </list>
     </option>
   </component>
@@ -536,7 +550,7 @@
       <workItem from="1518050339054" duration="391000" />
       <workItem from="1519242409494" duration="7482000" />
       <workItem from="1519672771536" duration="6824000" />
-      <workItem from="1520004282897" duration="58662000" />
+      <workItem from="1520004282897" duration="59021000" />
     </task>
     <task id="LOCAL-00001" summary="Change directory">
       <created>1520978863692</created>
@@ -615,11 +629,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522257603638</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="server.js updated with switch command">
+      <created>1522260734853</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1522260734854</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111476000" />
+    <option name="totallyTimeSpent" value="111835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1558" y="148" width="1666" height="816" extended-state="0" />
@@ -681,7 +702,8 @@
     <MESSAGE value="Update readme" />
     <MESSAGE value="Update to Endpoint Constructor" />
     <MESSAGE value="log collection tool added" />
-    <option name="LAST_COMMIT_MESSAGE" value="log collection tool added" />
+    <MESSAGE value="server.js updated with switch command" />
+    <option name="LAST_COMMIT_MESSAGE" value="server.js updated with switch command" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -995,29 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/buildXml.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="43" column="33" lean-forward="false" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-          <folding>
-            <marker date="1521745779000" expanded="true" signature="212:667" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="233:652" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="250:630" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="281:374" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="405:489" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="520:612" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="1021:1209" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="1041:1194" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="1057:1173" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="1072:1087" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="1072:1118" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="1072:1156" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="1072:1163" ph="..." />
-            <marker date="1521745779000" expanded="true" signature="1141:1151" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/fileWatcher.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -1093,19 +1092,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/svrConfig/comFunct.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
           <caret line="10" column="78" lean-forward="true" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svrConfig/comFunct.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="80" column="44" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/buildXml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <marker date="1521745779000" expanded="true" signature="212:667" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="233:652" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="250:630" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="281:374" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="405:489" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="520:612" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="1021:1209" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="1041:1194" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="1057:1173" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="1072:1087" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="1072:1118" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="1072:1156" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="1072:1163" ph="..." />
+            <marker date="1521745779000" expanded="true" signature="1141:1151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

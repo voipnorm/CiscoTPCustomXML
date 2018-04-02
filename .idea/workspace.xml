@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f270c219-8cd0-4e13-852e-aa83ae502eb8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svrConfig/comFunct.js" afterPath="$PROJECT_DIR$/svrConfig/comFunct.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/endpoint.js" afterPath="$PROJECT_DIR$/tools/endpoint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -86,12 +84,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="endpoint.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="endpoint.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/endpoint.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
               <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="251">
+                <caret line="66" column="65" lean-forward="false" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -175,7 +186,6 @@
         <option value="$PROJECT_DIR$/tools/fileWatcher.js" />
         <option value="$PROJECT_DIR$/svrConfig/httpServer.js" />
         <option value="$PROJECT_DIR$/xmlFiles/readme.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tools/collectLogs.js" />
         <option value="$PROJECT_DIR$/endpointLogs/readme.txt" />
         <option value="$PROJECT_DIR$/tools/tpXapi.js" />
@@ -183,6 +193,7 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/svrConfig/comFunct.js" />
         <option value="$PROJECT_DIR$/tools/endpoint.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -542,7 +553,7 @@
       <workItem from="1519242409494" duration="7482000" />
       <workItem from="1519672771536" duration="6824000" />
       <workItem from="1520004282897" duration="68863000" />
-      <workItem from="1522684826075" duration="8803000" />
+      <workItem from="1522684826075" duration="9811000" />
     </task>
     <task id="LOCAL-00001" summary="Change directory">
       <created>1520978863692</created>
@@ -642,11 +653,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522699920928</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Ability to deploy wallpaper only">
+      <created>1522700698832</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1522700698833</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130480000" />
+    <option name="totallyTimeSpent" value="131488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1558" y="149" width="1666" height="816" extended-state="0" />
@@ -710,7 +728,8 @@
     <MESSAGE value="log collection tool added" />
     <MESSAGE value="server.js updated with switch command" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="Ability to deploy wallpaper only" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ability to deploy wallpaper only" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -969,17 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-295">
-            <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/ipaddress.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1098,6 +1106,17 @@
         <state relative-caret-position="304">
           <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="251">
+            <caret line="66" column="65" lean-forward="false" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -4,7 +4,9 @@ Simple app to deploy packages to Cisco Telepresence apps.
 Branding for CE9.2.1+ and backup bundles for CE9.3+ devices is supported. Backup bundles is a new features for CE9.3+ firmware.
 
 Currently capable of deploying:
-* Custom Branding with little fuss. Takes care of reading CSV files for endpoints and also base64 encoding of image files.
+* Custom Branding with little fuss. Checks the endpoint if its branding capable via firmware version. Takes care of reading CSV files for endpoints and also base64 encoding of image files.
+* Using the branding option the script will check your endpoint version and deploy branding to endpoints capable or wallpaper for non-branding capable devices. SX10 check is currently not supported. SX10 has no branding option even if Firmware is CE9.3.
+* Deploy wallpaper images (also disables branding)to all your endpoints instead of using the branding option.
 * Backup bundle to multiple endpoints. Will create the backup bundle checksum for deployment and acts as http server for package delivery.
 
 ## Getting Started
@@ -58,6 +60,11 @@ To use the bundle command ensure you have created a backup bundle from your CE d
 ```
 ./xmlFiles/backupBundle
 ```
+To deploy wallpaper:
+```
+node server.js wallpaper
+```
+Ensure wallpaper image is available in ./img/wallpaper directory.
 ## Built With
 
 * Nodejs

@@ -15,6 +15,9 @@ switch (process.argv[2]) {
     case 'branding':
         log.info("Deploy Branding");
         return comms.branding();
+    case 'wallpaper':
+        log.info("Deploy Wall paper");
+        return comms.wallpaper();
     case 'logs':
         log.info("Deploy log collection.");
         return comms.logCollection(process.argv[3]);

@@ -103,6 +103,25 @@ module.exports = {
             .catch((err) => {
                 log.error(err);
             })
+    },
+    wallpaper: function(){
+        const dir = "./img/wallpaper/";
+        if(!dir) return log.error("No file found, please ensure that your wallpaper file to be deployed is in /img/wallpaper.");
+        return excel.readcsv()
+            .then((endpoints) => {
+                log.info("Processing branding xml to create new xml file......");
+                endpointArray = endpoints;
+            })
+            .then(() => {
+                log.info("XML deployment starting........ ");
+                _.forEach(endpointArray, function(ip){
+                    if(!ip) return log.info("Blank endpoint, no files deployed.");
+                    deployEndpoints.push(new Endpoint(ip, null, "wallpaper"));
+                })
+            })
+            .catch(err => {
+                log.error(err)
+            });
     }
 
 };

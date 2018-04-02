@@ -48,6 +48,8 @@ Endpoint.prototype.init = function(){
                     default:
                         return log.info("Something went wrong with firmware check");
                 }
+            }else if(self.type==="wallpaper"){
+                return self.postWallpaper();
             }else{
                 switch (true) {
                     case (/(^)9.3( |.|$)/).test(version):
@@ -131,7 +133,7 @@ Endpoint.prototype.postWallpaper = function(){
         }
     };
     log.info(JSON.stringify(formData));
-    var r = request.post({url:`http://${self.ipAdress}/api/wallpapers`, formData: formData},function optionalCallback(err, httpResponse, body) {
+    var r = request.post({url:`http://${self.ipAddress}/api/wallpapers`, formData: formData},function optionalCallback(err, httpResponse, body) {
         if (err) {
             return console.error('upload failed:', err);
         }

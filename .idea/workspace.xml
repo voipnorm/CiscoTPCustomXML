@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f270c219-8cd0-4e13-852e-aa83ae502eb8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/endpointLogs/Thu, 29 Mar 2018 16:01:31 GMT.x-gzip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/tpXapi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/endpoints/endpoints.csv" afterPath="$PROJECT_DIR$/endpoints/endpoints.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svrConfig/comFunct.js" afterPath="$PROJECT_DIR$/svrConfig/comFunct.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/endpoint.js" afterPath="$PROJECT_DIR$/tools/endpoint.js" />
     </list>
@@ -27,8 +24,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="254">
+              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -37,8 +34,8 @@
       <file leaf-file-name="comFunct.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/svrConfig/comFunct.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+            <state relative-caret-position="282">
+              <caret line="114" column="25" lean-forward="true" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -92,8 +89,8 @@
       <file leaf-file-name="endpoint.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tools/endpoint.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1261">
-              <caret line="93" column="41" lean-forward="false" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+            <state relative-caret-position="304">
+              <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,7 +109,7 @@
       <file leaf-file-name="fileWatcher.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/fileWatcher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
+            <state relative-caret-position="164">
               <caret line="57" column="55" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="57" selection-end-column="55" />
               <folding />
             </state>
@@ -181,10 +178,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tools/collectLogs.js" />
         <option value="$PROJECT_DIR$/endpointLogs/readme.txt" />
-        <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/svrConfig/comFunct.js" />
         <option value="$PROJECT_DIR$/tools/tpXapi.js" />
         <option value="$PROJECT_DIR$/endpoints/endpoints.csv" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/svrConfig/comFunct.js" />
         <option value="$PROJECT_DIR$/tools/endpoint.js" />
       </list>
     </option>
@@ -545,7 +542,7 @@
       <workItem from="1519242409494" duration="7482000" />
       <workItem from="1519672771536" duration="6824000" />
       <workItem from="1520004282897" duration="68863000" />
-      <workItem from="1522684826075" duration="8039000" />
+      <workItem from="1522684826075" duration="8803000" />
     </task>
     <task id="LOCAL-00001" summary="Change directory">
       <created>1520978863692</created>
@@ -638,22 +635,29 @@
       <option name="project" value="LOCAL" />
       <updated>1522261082359</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixes">
+      <created>1522699920928</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1522699920928</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129716000" />
+    <option name="totallyTimeSpent" value="130480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1558" y="149" width="1666" height="816" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21519756" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21519756" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44337016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44337016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1007,14 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/fileWatcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="55" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="57" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1054,22 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svrConfig/comFunct.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/endpoints/endpoints.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1089,10 +1069,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/fileWatcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="57" column="55" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="57" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svrConfig/comFunct.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="114" column="25" lean-forward="true" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tools/endpoint.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1261">
-          <caret line="93" column="41" lean-forward="false" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+        <state relative-caret-position="304">
+          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding />
         </state>
       </provider>

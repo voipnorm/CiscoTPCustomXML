@@ -47,7 +47,7 @@ module.exports = {
                 log.info("XML deployment starting........ ");
                 _.forEach(endpointArray, function(ip){
                     if(!ip) return log.info("Blank endpoint, no files deployed.");
-                    deployEndpoints.push(new Endpoint(ip, xmlReturn));
+                    deployEndpoints.push(new Endpoint(ip, xmlReturn, "bundle"));
                 })
             })
             .catch(err => {
@@ -84,7 +84,7 @@ module.exports = {
                 log.info("XML deployment starting........ ");
                 _.forEach(endpointArray, function(ip){
                     if(!ip) return log.info("Blank endpoint, no files deployed.");
-                    deployEndpoints.push(new Endpoint(ip, xmlReturn));
+                    deployEndpoints.push(new Endpoint(ip, xmlReturn, 'branding'));
 
 
 

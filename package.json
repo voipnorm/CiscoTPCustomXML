@@ -10,8 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bottleneck": "^2.2.2",
     "dotenv": "^5.0.1",
     "exceljs": "^0.9.1",
+    "jsxapi": "^4.1.2",
     "lodash": "^4.17.5",
     "request": "^2.85.0",
     "xmlhttprequest": "^1.8.0"

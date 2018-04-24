@@ -8,6 +8,7 @@ function TPXapi(endpoint){
     this.endpoint = endpoint;
     this.xapi;
     this.endpointVersion;
+    this.endpointType;
 
 };
 
@@ -19,7 +20,11 @@ TPXapi.prototype.getEndpointData =  function(){
         const self = this;
         return self.endpointUpdate()
             .then(() => {
-                return resolve(self.endpointVersion);
+                let endpoint = {
+                    version : self.endpointVersion,
+                    type : self.endpointType
+                }
+                return resolve(endpoint);
             })
             .catch(err => {
                 log.error(err)
@@ -37,6 +42,10 @@ TPXapi.prototype.endpointUpdate = function(){
         })
         .then((status) => {
             log.info(status);
+            return self.checkType()
+        })
+        .then((type) => {
+            log.info("The type is: "+type);
             return self.closeConnect()
         })
         .catch((err) => {
@@ -73,6 +82,21 @@ TPXapi.prototype.checkVersion = function(){
             .catch(err => reject(err));
     })
 };
+TPXapi.prototype.checkType = function(){
+    //SystemUnit type
+    log.info("info: Checking system type.")
+    const self = this;
+    return new Promise((resolve, reject) => {
+        return self.xapi.status
+            .get('SystemUnit ProductPlatform')
+            .then((type) => {
+                self.endpointType = type;
+                resolve(type);
+            })
+            .catch(err => reject(err));
+    })
+};
+
 
 //close ssh connection
 TPXapi.prototype.closeConnect =  function(){

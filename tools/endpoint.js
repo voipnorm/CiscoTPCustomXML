@@ -33,20 +33,25 @@ Endpoint.prototype.init = function(){
 //insert version checker to work out best thing to deploy. Should check version for back-bundles as well.
     self.firmwareCheck()
         .then((data) => {
-            var version = data.slice(2,7);
-            log.info(version);
-            if(self.type==="branding"){
-                switch (true) {
-                    case (/(^)9.3( |.|$)/).test(version):
-                        return self.deployXml();
-                    case (/(^)9.2( |.|$)/).test(version):
-                        return self.deployXml();
-                    case (/(^)9.1( |.|$)/).test(version):
-                        return self.postWallpaper();
-                    case (/(^)7( |.|$)/).test(version):
-                        return self.postWallpaper();
-                    default:
-                        return log.info("Something went wrong with firmware check");
+            var version = data.version.slice(2,7);
+            var tpType = data.type;
+            log.info(version + tpType);
+            if(self.type==="branding") {
+                if (tpType === "SX10") {
+                    return self.postWallpaper();
+                } else {
+                    switch (true) {
+                        case (/(^)9.3( |.|$)/).test(version):
+                            return self.deployXml();
+                        case (/(^)9.2( |.|$)/).test(version):
+                            return self.deployXml();
+                        case (/(^)9.1( |.|$)/).test(version):
+                            return self.postWallpaper();
+                        case (/(^)7( |.|$)/).test(version):
+                            return self.postWallpaper();
+                        default:
+                            return log.info("Something went wrong with firmware check");
+                    }
                 }
             }else if(self.type==="wallpaper"){
                 return self.postWallpaper();
@@ -78,8 +83,8 @@ Endpoint.prototype.firmwareCheck = function (){
         };
         var videoCodec = new TpXapi(ep);
         videoCodec.getEndpointData()
-            .then((version) => {
-            return resolve(version);
+            .then((endpoint) => {
+            return resolve(endpoint);
             })
             .catch(err => {
                 log.error(err);

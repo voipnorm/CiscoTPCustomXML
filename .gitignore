@@ -7,7 +7,7 @@ cart.json
 device.json
 #access log
 access.log
-
+/endpointLogs
 
 # Logs
 logs
